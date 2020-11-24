@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Jogo da Multiplicação</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+
+<body>
+    <div class='wrapper'>
+        <div class='title'>
+            <h1>Jogo da Multiplicação!</h1>
+            <h3>Tente acertar a maior quantidade de resultados das multiplicações apresentadas</h3>
+            <button id='btnStart'>Começar!</button>
+        </div>
+        <div class='question'>
+            <h1><span id='question' value=>...</span></h1>
+            <h3><span id='answerCheck'>Clique em começar!</span></h3>
+        </div>
+        <form id='mainForm'>
+            <input id='userInput' type='text' autocomplete="off" value='' placeholder='Insira a resposta...'>
+            <button id='submitBtn'>Enviar</button>
+        </form>
+        <div class='scoring'>
+            <div class='positive'>
+                <h1><span id='positive'>0</span></h1>
+                <h4>Acertos</h4>
+            </div>
+            <div class='negative'>
+                <h1><span id='negative'>0</span></h1>
+                <h4>Erros</h4>
+            </div>
+        </div>
+
+    </div>
+
+    <script src='script.js'></script>
+</body>
+
+</html>
