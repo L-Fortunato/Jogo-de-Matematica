@@ -92,6 +92,8 @@ btnSplit.onclick = function () {
 
 
 form.onsubmit = function () {
+    let splitting = random1 / random2
+
     if (astate == 1) {
         if (isNaN(answer.value) || answer.value == 0) {
             answer.value = ''
@@ -156,7 +158,7 @@ form.onsubmit = function () {
         if (answer.value == '') {
             answerCheck.innerHTML = 'insira uma resposta válida'
             answerCheck.style.cssText = 'color: rgb(255, 250, 240)'
-        } else if (answer.value == random1 / random2) {
+        } else if (answer.value == Math.round(splitting * 100) / 100) {
             right++;
             positiveScore.innerHTML = right;
             answerCheck.innerHTML = 'Acertou! Parabéns!'
