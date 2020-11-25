@@ -4,23 +4,29 @@
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Jogo da Multiplicação</title>
+    <title>Jogo da Matemática</title>
     <link rel='stylesheet' href='style.css'>
 </head>
 
 <body>
     <div class='wrapper'>
         <div class='title'>
-            <h1>Jogo da Multiplicação!</h1>
-            <h3>Tente acertar a maior quantidade de resultados das multiplicações apresentadas</h3>
-            <button id='btnStart'>Começar!</button>
+            <h1>Jogo da Matemática!</h1>
+            <h3>Tente acertar a maior quantidade de resultados das operações apresentadas</h3>
+            <div id="btnDiv">
+                <button class='btns' id='btnSum'>Soma</button>
+                <button class='btns' id='btnSubtract'>Subtração</button>
+                <button class='btns' id='btnMulti'>Multiplicação</button>
+                <button class='btns' id='btnSplit'>Divisão</button>
+            </div>
         </div>
         <div class='question'>
             <h1><span id='question' value=>...</span></h1>
             <h3><span id='answerCheck'>Clique em começar!</span></h3>
         </div>
         <form id='mainForm'>
-            <input id='userInput' type='number' autocomplete="off" value='' placeholder='Insira a resposta...'>
+            <input id='userInput' type='number' autocomplete="off" value='' placeholder='Insira a resposta...'
+                step="any">
             <button id='submitBtn'>Enviar</button>
         </form>
         <div class='scoring'>
@@ -33,8 +39,11 @@
                 <h4>Erros</h4>
             </div>
         </div>
-
+        <div class="footer">
+            <a href="https://github.com/L-Fortunato">Desenvolvido por L-Fortunato</a>
+        </div>
     </div>
+    
 
     <script src='script.js'></script>
 </body>

@@ -1,2 +1,2 @@
-<h1>Jogo básico de multiplicação</h1>
-Jogo básico de multiplicação, feito a pedido de um colega
+<h1>Jogo básico de Matemática</h1>
+Jogo básico de Matemática, inicialmente somente multiplicações, foram adicionadas outras operações matemáticas
